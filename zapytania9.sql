@@ -18,7 +18,7 @@ SELECT
 FROM pracownicy AS p;
 
 
---2.Wyswietl imion i nazwiska klientow, ktorzy wypozyczali oraz pracownikow ktorzy obslugiwali wypozyczenia samochodu marki audi a4
+--2.Wyswietl imiona i nazwiska klientow, ktorzy wypozyczali oraz pracownikow ktorzy obslugiwali wypozyczenia samochodu marki audi a4
 SELECT
 	k.imie_klienta 'imie',
     k.nazwisko_klienta 'nazwisko',
@@ -126,7 +126,7 @@ WHERE s.model='astra';
 
 
 --ZADANIE DOMOWE
---1.Wyswietl imiona i nazwiska klientow, ktorzy wypozyczalo praz pracownikow ktorzy obslugiwali wypozyczenia aut marki bmw
+--1.Wyswietl imiona i nazwiska klientow, ktorzy wypozyczali praz pracownikow ktorzy obslugiwali wypozyczenia aut marki bmw
 SELECT
 	k.imie_klienta,
     k.nazwisko_klienta,
@@ -168,7 +168,7 @@ FROM klienci AS k
     JOIN samochody AS s ON s.id_samochodu=d.id_samochodu
 WHERE s.model='CLK' AND w.data_wyp BETWEEN "2022-05-31" AND "2022-09-30";
 
---3.Wyswietl imiona i nazwiska klientow, ktorzt wypozyczali Renault clio ale nie wypozyczali bmw3
+--3.Wyswietl imiona i nazwiska klientow, ktorzy wypozyczali Renault clio ale nie wypozyczali bmw3
 SELECT
 	k.imie_klienta,
     k.nazwisko_klienta,
