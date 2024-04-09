@@ -5,7 +5,7 @@ SELECT
 	trim(k.nazwisko_klienta) 'nazwisko'
 FROM klienci AS k 
 
---usunięcie znakow(spacji) z srodka slowa - użycie 
+--usunięcie znakow(spacji) z srodka slowa - uzycie 
 
 SELECT
 	replace(k.imie_klienta, ' ', '')'imie',
